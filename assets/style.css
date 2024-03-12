@@ -1,0 +1,42 @@
+/* ESTA ES LA CONFIGURACIÓN DE DISEÑO */
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+}
+.imagen {
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+}
+.espacios {
+  display: flex;
+  justify-content: space-evenly;
+}
+.condición {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.clave{
+    display: flex;
+    justify-content: center;
+}
+.select{
+    display: flex;
+    justify-content: center;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

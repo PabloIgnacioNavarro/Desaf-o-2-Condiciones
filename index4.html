@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 2 Condiciones</title>
+    <link rel="stylesheet" href="./assets/style2.css">
+</head>
+<!-- AQUÍ COMIENZA LA CONSTRUCCIÓN DE DESAFÍO -->
+<body>
+    <div class="contenedor">
+    <h1 id="titulo">Juliette Antonella</h1>
+    <!-- CONDICIÓN DE PARRAFO-->
+    <p id="parrafo" onclick="
+    var parrafo = document.querySelector('#parrafo');
+    if(parrafo.style.border != '2px solid red'){
+        parrafo.style.border = '2px solid red'
+    }else{
+        parrafo.style.border = 'none'
+    }
+    ">Hola ella es mi hija</p>
+    <div class="ajustar">
+    <img id="imagen" class="ajustar1"  src="./assets/2020-07-12 12_26_45-Fotos.png" alt="hija">
+    </div>
+    <!-- CONDICIÓN DE IMAGEN-->
+    <button id="btn-radius" onclick="
+    var btn= document.querySelector('#btn-radius')
+    var img= document.querySelector('#imagen')
+    if(img.style.borderRadius> '0%'){
+       img.style.borderRadius = '0%'
+    }else {
+        img.style.borderRadius= '80%'   
+    }
+    ">Agregar/Quitar radio</button>
+    </div>
+     <!--AQUÍ COMIENZA LA SEGUNDA PÁGINA  -->
+    <h1>Puedes llevar hasta 10 fotos en total</h1>
+    <div class="fotos">
+    <img id="imagenes" class="ajustar2" src="./assets/IMG-20181223-WA0007.jpeg" alt="foto1">
+    <img id="imagenes" class="ajustar3"src="./assets/IMG-20181223-WA0023.jpeg" alt="foto2">
+    <img id="imagenes" class="ajustar4"src="./assets/IMG-20181230-WA0031.jpeg" alt="foto3">
+    </div>
+    <!-- AQUÍ ESTÁN LOS INPUT -->
+    <div class="espacios">
+    <input id="a" type="text">
+    <input id="b" type="text">
+    <input id="c" type="text">
+    </div>
+    <P>Llevas demasiadas fotos</P>
+    <p id="resultado"></p>
+    <div class="boton">
+    <button onclick="
+    var inputA = document.querySelector('#a').value;
+    var inputB = document.querySelector('#b').value;
+    var inputC = document.querySelector('#c').value;
+    var total= Number(inputA)+ Number(inputB)+ Number(inputC);
+    var parrafo = document.querySelector('#resultado');
+    if(total > 10){
+    parrafo.innerHTML = 'Superaste el total'  
+    }else if(total==10){
+    parrafo.innerHTML = 'Llegaste al límite'  
+    } 
+    else {
+    parrafo.innerHTML = 'Todavía puedes aumentar totales'
+    }
+    ">
+    Verificar
+    </button>
+    </div>
+    <!--AQUÍ COMIENZAN LOS SELECT DE CONTRASEÑA-->
+    <div class="select">
+    <select name="select1" id="selec1t">
+    <option value="0">0</option>    
+    <option value="1">1</option>    
+    <option value="2">2</option>    
+    <option value="3">3</option>    
+    <option value="4">4</option>    
+    <option value="5">5</option>    
+    <option value="6">6</option>    
+    <option value="7">7</option>    
+    <option value="8">8</option>    
+    <option value="9">9</option>    
+    </select>
+    <select name="select2" id="select2">
+    <option value="0">0</option>    
+    <option value="1">1</option>    
+    <option value="2">2</option>    
+    <option value="3">3</option>    
+    <option value="4">4</option>    
+    <option value="5">5</option>    
+    <option value="6">6</option>    
+    <option value="7">7</option>    
+    <option value="8">8</option>    
+    <option value="9">9</option>    
+    </select>
+    <select name="select3" id="select3">
+    <option value="0">0</option>    
+    <option value="1">1</option>    
+    <option value="2">2</option>    
+    <option value="3">3</option>    
+    <option value="4">4</option>    
+    <option value="5">5</option>    
+    <option value="6">6</option>    
+    <option value="7">7</option>    
+    <option value="8">8</option>    
+    <option value="9">9</option>    
+    </select>
+    </div>
+    <p id="123" ></p>
+    <div class="boton">
+    <button onclick="
+    var select = document.querySelector('#123');
+    console.log(select.value)
+    var parrafo= document.querySelector('#123')
+    var resultado
+    if(select.value =='9'&& select2.value =='1'&& select3.value =='1'){
+        resultado='password 1 correcto'
+    }
+    parrafo.innerHTML=resultado
+    ">Ingresar</button>
+    </div>
+    <p id="abc"></p>
+    
+<!-- SECCIÓN DE FOOTER -->
+<footer>
+    <script src="./assets/script4.js"></script>
+</footer>
+</body>
+</html>

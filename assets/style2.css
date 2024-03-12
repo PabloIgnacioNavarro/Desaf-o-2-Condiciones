@@ -1,0 +1,55 @@
+/* ESTA ES LA CONFIGURACIÓN DE DISEÑO */
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.ajustar1 {
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  display: flex;
+  justify-content: center;
+}
+.fotos{
+  display: flex;
+  justify-content: center;
+}
+.espacios{
+  display: flex;
+  justify-content: space-evenly;
+}
+p{
+  display: flex;
+  justify-content: center;
+}
+.ajustar2 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+.ajustar3 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+.ajustar4 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+.boton{
+  display: flex;
+  justify-content: center;
+}
+.select{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}

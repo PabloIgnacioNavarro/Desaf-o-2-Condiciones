@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío 2 Condiciones</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <header>
+    <!-- AQUÍ COMIENZA LA CONSTRUCCIÓN DE DESAFÍO -->
+  </header>
+  <!-- ESTRUCTURA DE STICKERS -->
+  <body>
+    <div class="texto">
+      <p>Puedes llevar hasta 10 espejos en total</p>
+    </div>
+    <div class="boxes">
+      <!-- STICKERS 1 -->
+      <div
+        class="contenedor"
+        onclick="
+      stickers1=document.querySelector('.boxes')
+      if(activo===false){
+        stickers1.style.backgroundColor='gray'
+        activo=true
+      }else{
+        stickers1.style.backgroundColor='white'
+        activo=false
+      }     
+      "
+      >
+        <img
+          class="imagen"
+          src="./assets/IMG_20230930_112733OML1.jpg"
+          alt="espejo amarillo"
+        />
+      </div>
+      <!-- STICKERS 2 -->
+      <div
+        class="contenedor"
+        onclick="
+     stickers1=document.querySelector('.boxes')
+     if(activo===false){
+       stickers1.style.backgroundColor='gray'
+       activo=true
+     }else{
+       stickers1.style.backgroundColor='white'
+       activo=false
+     }     
+     "
+      >
+        <img
+          class="imagen"
+          src="./assets/IMG_20230930_112826OML1.jpg"
+          alt="espejo verde"
+        />
+      </div>
+      <!-- STICKERS 3 -->
+      <div
+        class="contenedor"
+        onclick="
+     stickers1=document.querySelector('.boxes')
+     if(activo===false){
+       stickers1.style.backgroundColor='gray'
+       activo=true
+     }else{
+       stickers1.style.backgroundColor='white'
+       activo=false
+     }     
+     "
+      >
+        <img
+          class="imagen"
+          src="./assets/IMG_20230930_112911OML1.jpg"
+          alt="espejo rosado"
+        />
+      </div>
+    </div>
+    <div class="espacios">
+      <div class="espacio1">
+        <input id="text" type="text" />
+      </div>
+      <div class="espacio2">
+        <input id="text" type="text" />
+      </div>
+      <div class="espacio3">
+        <input id="text" type="text" />
+      </div>
+    </div>
+    <div class="condición">
+      <div>
+        <p class="parrafo">Llevas demasiados espejos</p>
+        <input id="text" type="text" />
+        <button onclick="">Verificar</button>
+      </div>
+    </div>
+    <div class="clave">
+      <p>Ingresa el password</p>
+    </div>
+    <div class="select">
+      <select class="primero" name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <select class="primero" name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <select class="primero" name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </div>
+    <div>
+      <div class="boton">
+        <button
+          onclick="
+        var parrafo = document.querySelector('p');
+         var contraseña = document.querySelector('.primero').value;
+         if (contraseña == 911) {
+          alert('password 1 correcto');
+          } else if (contraseña == 714) {
+           alert('password 2 es correcto');
+        } else {
+             alert('password incorrecto');
+          }           
+         "
+        >
+          Ingresar
+        </button>
+      </div>
+    </div>
+    <footer>
+      <!-- AQUÍ SE ENLAZA JAVASCRIPT -->
+      <script src="./assets/script3.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select class="primero" name="" id="">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <button
+      onclick="
+    parrafo = document.querySelector('p');
+contraseña = document.querySelector('.primero').value;
+console.log(typeof contraseña)
+if (contraseña === '1') {
+  parrafo.innerHTML= ('adelante')
+} else if (contraseña == 2) {
+    parrafo.innerHTML= ('pase')
+} else {
+    parrafo.innerHTML= ('fuera')
+}
+
+    "
+    >
+      verificar
+    </button>
+    <p></p>
+    <script src="./assets/script2.js"></script>
+  </body>
+</html>
